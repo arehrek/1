@@ -1,0 +1,44 @@
+
+A {
+    font-size: 18pt;
+    text-decoration: none;
+}
+
+A:link {
+    color: blue;
+}
+
+A:visited {
+    color: green;
+}
+
+A:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+div.podpis_ucznia {
+    color: red;
+    font-size: 2cm;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+div.def_none {
+    color: blue;
+    font-size: 18mm;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    line-height: 1.3;
+}
+
+div.def_underline {
+    color: green;
+    font-size: 22mm;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    line-height: 1.3;
+}
+
+/* Hrechka Z59_css 
