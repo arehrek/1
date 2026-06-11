@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Hrechka Z56_html</title>
+    <style>
+       
+       
+    </style>
+</head>
+<body>
+
+    <h1>1) Składnia teoretyczna definiowania klasy</h1>
+    <table class="syntax-box">
+        <tr>
+            <td>selektor.klasa { cecha: wartość }</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h1>2) Podaj opis dla Klasa "cecha" oraz "wartość"</h1>
+    <p><strong>Klasa</strong> to wartość atrybutu <span class="example-code">class="..."</span> nadanego selektorowi z poziomu języka (X)HTML.</p>
+    <p><strong>"cecha"</strong> oraz <strong>"wartość"</strong> określają atrybuty elementu nadane poprzez style (właściwość CSS i przypisaną jej wartość podkręcającą wygląd).</p>
+
+    <hr>
+
+    <h1>3) Jaki znacznik może być selektorem? Trzy przykłady selektorów dla klas (ze znaczeniem)</h1>
+    <p>Selektorem może być dowolny znacznik języka HTML. Przykłady:</p>
+    <ul>
+        <li><span class="example-code">p</span> &rarr; akapit (tekst blokowy),</li>
+        <li><span class="example-code">h1</span> &rarr; tytuł / nagłówek najwyższego stopnia,</li>
+        <li><span class="example-code">td</span> &rarr; komórka tabeli.</li>
+    </ul>
+
+    <hr>
+
+    <h1>4) Podaj uwagi na temat nazwy klas</h1>
+    <p>Nazwą może być <span class="bold-css">dowolny pojedynczy wyraz</span>, nie może on zawierać znaków:</p>
+    <ol type="a">
+        <li><span class="bold-css">spacji</span></li>
+        <li><span class="bold-css">kropki</span></li>
+        <li><span class="bold-css">przecinka</span></li>
+        <li><span class="bold-css">dwukropka</span></li>
+        <li><span class="bold-css">pytajnika</span></li>
+        <li><span class="bold-css">nawiasów</span></li>
+        <li><span class="bold-css">znaku równości</span></li>
+        <li><span class="bold-css">plusa itp.</span></li>
+    </ol>
+    <p>Może zawierać:</p>
+    <ol type="a">
+        <li><span class="bold-css">litery (A-Z, a-z)</span></li>
+        <li><span class="bold-css">cyfry (0-9)</span></li>
+        <li><span class="bold-css">myślniki ("-")</span></li>
+        <li><span class="bold-css">podkreślniki ("_")</span> <span class="bold-css">(Lepiej nie używać polskich liter)</span></li>
+    </ol>
+    <p>Nazwa nie może zaczynać się od <span class="bold-css">cyfry ani myślnika</span>.</p>
+    <p>Gdy chcemy użyć znaków "zakazanych" znaków, należy <span class="bold-css">w deklaracji klasy poprzedzić je odwróconym ukośnikiem "\", np. reguła: selektor.B\&amp;W\? { cecha: wartość } odpowiada klasie: class="B&amp;W?"</span>.</p>
+
+    <hr>
+
+    <h1>5) Jakie jest zastosowanie klas?</h1>
+    <p>Deklaracja klasy jest przydatna szczególnie, jeśli na wielu stronach serwisu znajdują się elementy mające takie samo formatowanie, a dodatkowo nie można dla nich posłużyć się selektorem typu, ponieważ na stronie znajdują się inne znaczniki tego samego rodzaju co wybrany element, ale nie chcemy, aby i one otrzymały takie samo formatowanie.</p>
+
+    <hr>
+
+    <h1>6) Kiedy ma zastosowanie lista klas?</h1>
+    <p>Lista klas ma zastosowanie, jeśli chcemy do pojedynczego elementu przypisać kilka różnych, niezależnych klas CSS jednocześnie, łącząc ich właściwości formatowania w jednym znaczniku HTML.</p>
+
+    <hr>
+
+    <h1>7) Składnia teoretyczna listy klasy oraz uwagi</h1>
+    <table class="syntax-box">
+        <tr>
+            <td>&lt;selektor class="klasa1 klasa2 klasa3..."&gt;...&lt;/selektor&gt;</td>
+        </tr>
+    </table>
+    <p><strong>Uwagi:</strong></p>
+    <ul>
+        <li>Klasy: klasa1, klasa2, klasa3 muszą być zdeklarowane w wewnętrznym, zewnętrznym lub importowanym arkuszu stylów.</li>
+        <li>Kolejność wpisywania nazw klas w wartości atrybutu <span class="example-code">class="..."</span> nie ma znaczenia na ostateczny sposób formatowania elementu. Jeżeli kilka przypisanych klas odnosi się do tej samej własności, o wyniku decyduje zasada kaskadowości (kolejność definicji w arkuszu CSS).</li>
+    </ul>
+
+    <hr>
+
+    <h1>8) Czym są podzbiory klas. Składnia teoretyczna listy klasy</h1>
+    <p>Istnieje możliwość określenia tzw. podzbioru klas, czyli podania, jakie klasy musi mieć jednocześnie przypisane element, aby wybrana reguła CSS miała do niego zastosowanie. Na przykład po wpisaniu składni:</p>
+    <table class="syntax-box">
+        <tr>
+            <td>selektor.klasa1.klasa3 { cecha: wartość }</td>
+        </tr>
+    </table>
+    <p>Zmieniony zostanie sposób formatowania elementu wywołanego jako:</p>
+    <p><span class="example-code">&lt;selektor class="klasa1 klasa2 klasa3"&gt;...&lt;/selektor&gt;</span></p>
+    <p>Kolejność podawania klas – zarówno w regule CSS, jak i w wartości atrybutu <span class="example-code">class="..."</span> – nie ma znaczenia.</p>
+
+    <hr>
+
+    <h1>9) Co jest sygnałem (przesłanką), że należy zastosować klasy?</h1>
+    <ul>
+        <li>Jeśli jakiś element, o specyficznym rodzaju formatowania, występuje przynajmniej raz na niektórych stronach Twojego serwisu (może to być np. główny tytuł strony), jest to znak, że dobrze byłoby umieścić w zewnętrznym arkuszu stylów deklarację jego klasy. Dzięki temu, jeśli później zdecydujemy się zmienić jego formatowanie, nie będziemy musieli modyfikować każdej ze stron, a jedynie zewnętrzny arkusz.</li>
+    </ul>
+
+    <hr>
+
+    <h1>10) Kiedy i z jakiego powodu powinny być planowane klasy dla wykonywanej strony?</h1>
+    <ul>
+        <li>Już na początkowym etapie projektowania serwisu, dobrze jest dokładnie obmyślić, jakie klasy mogą okazać się użyteczne. Im więcej deklaracji klas – odnoszących się do powtarzalnych elementów – umieścisz w zewnętrznym arkuszu stylów, tym szybciej przebiegnie późniejsza ewentualna modyfikacja stron!</li>
+    </ul>
+
+    <hr>
+
+    <h1>11) Jaki jest cel stosowania komentarzy podczas definiowania klas?</h1>
+    <ul>
+        <li>Dobrym pomysłem jest również wstawianie komentarza przed każdą deklaracją klasy w arkuszu (znaki: <span class="example-code">/* ... */</span>), w którym opisuje się jej przeznaczenie. Po jakimś czasie w Twoim arkuszu stylów może znaleźć się tyle klas, że zapomnisz, do jakich elementów się one odnosiły. Wtedy właśnie bardzo przydatny może się okazać wpisany wcześniej komentarz.</li>
+    </ul>
+
+    <hr>
+
+    <h1>12) Podaj konkretny przykład definiowania klasy oraz jej użycia (wywołanie)</h1>
+    <p><strong>Definicja w arkuszu styli:</strong></p>
+    <p><span class="example-code">p.przyklad_klasa { color: red; }</span></p>
+    <p><strong>Wywołanie w kodzie HTML:</strong></p>
+    <p><span class="example-code">&lt;p class="przyklad_klasa"&gt;To jest akapit.&lt;/p&gt;</span></p>
+
+    <hr>
+
+    <h1>13) Omów klasę odnoszącą się tylko do jednego selektora wraz z przykładem</h1>
+    <p>Klasa odnosząca się tylko do jednego selektora to klasa <strong>NIEUNIWERSALNA</strong>. Podobnie jak w przypadku identyfikatora, tak zdefiniowana klasa może zostać użyta tylko w tym selektorze (znaczniku), do którego została bezpośrednio przypisana w CSS.</p>
+    
+    <p><strong>Przykład 1:</strong> Zdefiniowanie oraz użycie klasy NIEUNIWERSALNEJ dla znacznika <span class="example-code">&lt;p&gt;</span></p>
+    <p>Definicja arkusza styli:</p>
+    <pre>p.moja {
+  color: green;
+  font-size: 14pt;
+}</pre>
+    <p>Wywołanie (fragment kodu HTML):</p>
+    <p><span class="example-code">&lt;p class="moja"&gt;Treść akapitu&lt;/p&gt;</span></p>
+
+    <p><strong>Przykład 2:</strong></p>
+    <p>Plik *.CSS:</p>
+    <pre>p.przyklad_klasa { color: red; }</pre>
+    <p>Fragment kodu HTML &rarr; wywołanie klasy:</p>
+    <p><span class="example-code">&lt;p class="przyklad_klasa"&gt;To jest akapit.&lt;/p&gt;</span></p>
+
+    <hr>
+
+    <h1>14) Jaki jest cel stosowania klasy uniwersalnej. Jakie jest znaczenie znaku „*” oraz kiedy można nie stosować tego znaku. Podaj przykład</h1>
+    <p><strong>Klasa uniwersalna</strong> ma na celu umożliwienie formatowania różnych typów znaczników HTML tą samą klasą, gdy podczas projektowania nie wiemy jeszcze, do jakich dokładnie elementów jej użyjemy.</p>
+    <p>Znaczenie znaku <span class="example-code">*</span> to selektor uniwersalny (odnosi się do wszystkiego). Znak ten można całkowicie pominąć – zapis rozpoczynający się bezpośrednio od kropki (np. <span class="example-code">.nazwa</span>) jest domyślnie traktowany jako uniwersalny.</p>
+
+    <p><strong>Przykład 1 (z gwiazdką i bez):</strong></p>
+    <pre>*.przyklad_uniwersalna { color: red; }
+.przyklad_uniwersalna { font-size: 12pt; color: red; }</pre>
+
+    <p><strong>Przykład 2 (Definicja i wywołanie wielokrotne):</strong></p>
+    <p>Definicja:</p>
+    <pre>.moja {
+  color: red;
+  font-size: 12pt;
+  font-style: italic;
+}</pre>
+    <p>Wywołanie:</p>
+    <pre>&lt;p class="moja"&gt;Przykład akapitu z określoną klasą&lt;/p&gt;
+&lt;h1 class="moja"&gt;Przykład nagłówka z określoną klasą&lt;/h1&gt;</pre>
+
+    <p><strong>Przykład 3 (Nadpisywanie i współpraca z selektorami typu):</strong></p>
+    <p>Kod arkusza CSS:</p>
+    <pre>p {
+  font-size: 14pt;
+  color: green;
+}
+.moja {
+  font-style: italic;
+  font-size: 20pt;
+  color: red;
+}</pre>
+    <p>Kod fragmentu HTML:</p>
+    <pre>&lt;p&gt;Blok tekstu o kolorze zielonym i czcionce 14pt&lt;/p&gt;
+&lt;p class="moja"&gt;Blok tekstu, w którym użyłem klasy o nazwie .moja&lt;/p&gt;
+&lt;p&gt;Blok tekstu o kolorze zielonym i czcionce 14pt&lt;/p&gt;
+&lt;ol class="moja"&gt;
+  &lt;li&gt;lista, w której użyłem klasy o nazwie .moja&lt;/li&gt;
+  &lt;li&gt;lista, w której użyłem klasy o nazwie .moja&lt;/li&gt;
+&lt;/ol&gt;</pre>
+<!--  Hrechka Z56_kod  --> 
+</body>
+</html>

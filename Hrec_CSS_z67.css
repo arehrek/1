@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 30px;
+    line-height: 1.6;
+}
+
+
+
+
+p.akapit_pierwszy {
+    font-size: 20pt;          
+    color: turquoise;         
+}
+
+p.akapit_pierwszy::first-letter {
+    font-size: 121pt;         
+    color: orange;           
+    float: left;
+    line-height: 0.9;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+
+p.akapit_drugi {
+    font-size: 20pt;          
+    color: turquoise;         
+}
+
+p.akapit_drugi::first-letter {
+    font-size: 121pt;        
+    color: blue;             
+    float: left;
+    line-height: 0.9;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+
+h1 {
+    color: fuchsia;          
+    font-size: 36pt;
+    margin-top: 40px;
+    clear: both;
+}
+
+h1::first-letter {
+    color: silver;           
+    font-size: 55pt;
+    font-weight: bold;
+}
+
+p.akapit_linia {
+    font-size: 14pt;
+    color: #333333;
+    margin-top: 30px;
+}
+
+p.akapit_linia::first-line {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Hrechka Z67_css */

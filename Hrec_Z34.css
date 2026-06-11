@@ -1,0 +1,18 @@
+
+
+
+h3 {
+    width: 400pt;
+    height: 1.5cm;
+    background: rgb(70,130,180);
+
+    border-color: #800080;
+    border-style: inset;
+    border-width: 3px;
+
+    padding: 10px;
+    font-size: 12px;
+
+    margin-left: 0;
+}
+/*  Artem Hrechka Klasa: 1P */

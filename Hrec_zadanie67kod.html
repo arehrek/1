@@ -1,0 +1,107 @@
+<html lang="pl-PL"> 
+<head><title>Hrechka Z_html</title> 
+</head>
+<body>
+<h1>html</h1>
+<textarea cols="80" rows="29">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Hrechka Z67_html</title>
+    <link rel="stylesheet" href="hrec_CSS_z67.css">
+</head>
+<body>
+
+    <p class="akapit_pierwszy">
+        Hipertekstowy język znaczników, czyli HTML, stanowi fundamentalny kręgosłup każdej współczesnej strony internetowej, definiując jej strukturę semantyczną oraz rozmieszczenie elementów strukturalnych przed nałożeniem stylów wizualnych CSS.
+    </p>
+
+    <p class="akapit_drugi">
+        Arkusz stylów CSS pozwala na całkowite odseparowanie warstwy prezentacji wizualnej dokumentu od jego struktury logicznej, co drastycznie ułatwia późniejsze zarządzanie kodem witryny oraz przyspiesza jej modyfikację.
+    </p>
+
+    <h1>CSS są piękne</h1>
+
+    <p class="akapit_linia">
+        Kolejnym pseudoelementem jest :first-line, który w przeciwieństwie do poprzednika<br>
+        obejmuje formatowaniem całą pierwszą linię, a nie tylko pierwszą literę. Przy zmianie rozmiaru 
+        okna przeglądarki, liczba słów w pierwszej linii ulegnie zmianie, a formatowanie automatycznie 
+        dostosuje się do nowego układu tekstu.
+    </p>
+
+</body>
+</html><!--  Hrechka Z67_kod  -->  
+</textarea>
+<h1>css</h1>
+<textarea cols="80" rows="29">
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 30px;
+    line-height: 1.6;
+}
+
+
+
+
+p.akapit_pierwszy {
+    font-size: 20pt;          
+    color: turquoise;         
+}
+
+p.akapit_pierwszy::first-letter {
+    font-size: 121pt;         
+    color: orange;           
+    float: left;
+    line-height: 0.9;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+
+p.akapit_drugi {
+    font-size: 20pt;          
+    color: turquoise;         
+}
+
+p.akapit_drugi::first-letter {
+    font-size: 121pt;        
+    color: blue;             
+    float: left;
+    line-height: 0.9;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+
+h1 {
+    color: fuchsia;          
+    font-size: 36pt;
+    margin-top: 40px;
+    clear: both;
+}
+
+h1::first-letter {
+    color: silver;           
+    font-size: 55pt;
+    font-weight: bold;
+}
+
+p.akapit_linia {
+    font-size: 14pt;
+    color: #333333;
+    margin-top: 30px;
+}
+
+p.akapit_linia::first-line {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Hrechka Z67_css */
+</textarea><!--  Hrechka Z67_kod  -->  
+</body>
+</html>

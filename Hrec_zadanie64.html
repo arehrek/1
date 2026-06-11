@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Hrechka Z64_html</title>
+    <link rel="stylesheet" href="Hrec_CSS_z64.css">
+</head>
+<body>
+
+    <h1>Teoria: Zaokrąglanie narożników obszarów bloków (np. DIV)</h1>
+    
+    <p>Poniższa tabela przedstawia składnię CSS dla poszczególnych narożników elementów blokowych:</p>
+    
+    <table width=95% border="1" >
+        <thead>
+            <tr>
+                <th>Umiejscowienie narożnika</th>
+                <th>Składnia teoretyczna reguły CSS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Zaokrąglenie górnego-lewego narożnika:</td>
+                <td>selektor { border-top-left-radius: zaokrąglenie }</td>
+            </tr>
+            <tr>
+                <td>Zaokrąglenie górnego-prawego narożnika:</td>
+                <td>selektor { border-top-right-radius: zaokrąglenie }</td>
+            </tr>
+            <tr>
+                <td>Zaokrąglenie dolnego-prawego narożnika:</td>
+                <td>selektor { border-bottom-right-radius: zaokrąglenie }</td>
+            </tr>
+            <tr>
+                <td>Zaokrąglenie dolnego-lewego narożnika:</td>
+                <td>selektor { border-bottom-left-radius: zaokrąglenie }</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Zastosowanie oraz uwagi dotyczące zaokrąglania narożników</h2>
+    <p>We wszystkich przypadkach selektorem może być dowolny znacznik, np.:</p>
+    <ul>
+        <li><strong>p</strong> – akapit</li>
+        <li><strong>h1</strong> – nagłówek</li>
+        <li><strong>div</strong> – blok</li>
+    </ul>
+    
+    <p>Natomiast wartość <em>"zaokrąglenie"</em> określa promień wyrażony w jednostkach długości (np. px, em) albo w procentach (względem obszaru obramowania - zobacz: Model pudełkowy). Możliwe jest tutaj podanie:</p>
+    <ul>
+        <li><strong>jednej wartości</strong> - zaokrąglenie symetryczne</li>
+        <li><strong>dwóch wartości</strong> - pierwsza określa poziomy promień ćwiartki elipsy zaokrąglenia, a druga - pionowy</li>
+    </ul>
+
+    <p>Zaokrąglone narożniki to bardzo ciekawy efekt wizualny, który może zwiększyć estetykę strony. Co ciekawe, element wcale nie musi mieć obramowania, aby miał zaokrąglone narożniki. Wystarczy, jeśli będzie miał ustalone jakieś tło, aby efekt był widoczny na ekranie.</p>
+    
+    <p><strong>Ale uwaga:</strong> tekst wewnątrz elementu nie zostanie zawinięty do zaokrąglonych rogów. Jeśli promień zaokrąglenia będzie zbyt duży, tekst wyjdzie na zewnątrz.</p>
+
+    <h2>Przykład z instrukcji</h2>
+    <div class="box">
+        border-top-right-radius: 10px;
+    </div>
+
+    <h1>Teoria: Centrowanie bloku DIV</h1>
+    <p>Aby poprawnie wycentrować element blokowy (taki jak DIV) w poziomie względem jego rodzica, w definicji CSS danego bloku należy wpisać automatyczne marginesy boczne:</p>
+    
+    <div class="box">
+        margin-left: auto;<br>
+        margin-right: auto;
+    </div>
+    
+    <p><em>Uwaga:</em> Do poprawnego działania centrowania za pomocą marginesów, wycentrowany blok DIV powinien mieć również określoną szerokość (np. <code style="font-family: monospace;">width: 50%;</code> lub <code style="font-family: monospace;">width: 400px;</code>), w przeciwnym razie domyślnie zajmie 100% dostępnej szerokości i efekt centrowania nie będzie widoczny.</p>
+<!--  Hrechka Z64_html  -->
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+body {
+    background-color: silver;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 11pt;
+}
+
+p:first-child {
+    font-size: 7mm;
+    font-style: italic;
+}
+
+div#pierwszy_hrechka {
+    width: 728pt;
+    background-color: rgb(200, 245, 200);
+    border: 3px solid rgb(0, 0, 0);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+div#drugi_hrechka {
+    width: 928pt;
+    background-color: rgb(200, 230, 255);
+    border: 5px solid rgb(0, 0, 128);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+ 
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+
+div#trzeci_hrechka {
+    width: 1128pt; 
+    background-color: rgb(255, 200, 220); 
+    border: 7px solid rgb(128, 0, 128); 
+   
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+/* Hrechka Z65_css */

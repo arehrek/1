@@ -1,0 +1,42 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222222;
+    margin: 30px;
+}
+
+
+h1 {
+    font-size: 20pt;
+    color: #000000;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333333;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 14pt;
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.box {
+    background-color: #f5f5f5;
+    border-left: 4px solid #2980b9;
+    padding: 15px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 11pt;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+/*Hrechka Z64_css */
